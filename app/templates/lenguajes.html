@@ -1,0 +1,10 @@
+{% extends './layout.html'%} {% block contenido %} {%if data.lenguajes|length >
+0 %}
+<ul>
+  {% for len in data.lenguajes %}
+  <li>{{len}}</li>
+  {%endfor%}
+</ul>
+{%else%}
+<p>No hay listado de lenguajes</p>
+{%endif%} {% endblock%}
